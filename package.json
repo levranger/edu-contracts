@@ -1,0 +1,37 @@
+{
+  "name": "edu-contracts",
+  "version": "1.0.0",
+  "description": "contracts for edu platform",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levranger/edu-contracts.git"
+  },
+  "keywords": ["edu-platform", "edu-contracts"],
+  "author": "Lev Polshkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/levranger/edu-contracts/issues"
+  },
+  "homepage": "https://github.com/levranger/edu-contracts#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "prettier": "^2.7.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0"
+  }
+}
