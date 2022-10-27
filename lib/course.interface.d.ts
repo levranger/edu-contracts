@@ -1,5 +1,5 @@
-import { BaseInterface } from "./base.interface";
-import { LessonInterface } from "./lesson.interface";
+import { BaseInterface } from './base.interface';
+import { LessonInterface } from './lesson.interface';
 export interface CourseInterface extends BaseInterface {
     name: string;
     description: string;

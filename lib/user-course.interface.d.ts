@@ -1,6 +1,6 @@
-import { BaseInterface } from "./base.interface";
-import { CourseInterface } from "./course.interface";
-import { UserInterface } from "./user.interface";
+import { BaseInterface } from './base.interface';
+import { CourseInterface } from './course.interface';
+import { UserInterface } from './user.interface';
 export interface UserCourseInterface extends BaseInterface {
     userId: number;
     course: CourseInterface;
